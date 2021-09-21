@@ -1,3 +1,30 @@
 /* Imports */
 
 @import url('base-styles.css');
+
+/* Tag Styles */
+
+body {
+    background: url('../img/tothemoon.jpg') center left / cover no-repeat;
+}
+
+/* Class Styles */
+
+.main-content {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* ID Styles */
+
+#donut {
+    background: url('../img/bacd.jpeg') center center / cover no-repeat;
+    width: 500px;
+    height: 500px;
+    margin: 20px auto 0px auto;
+    border-radius: 50%;
+}
+
+/* Animations */
+
+/* Media Queries */
