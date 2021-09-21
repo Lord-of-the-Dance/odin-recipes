@@ -1,0 +1,38 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+/* Tag Styles */
+
+body {
+    background: center no-repeat url("../img/starry.gif") #0c045f, linear-gradient(transparent, #000);
+    background-size: contain;
+}
+
+header, footer {
+    text-align: center;
+    padding: 35px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* ID Styles */
+#the-doge {
+    height: 500px;
+    margin: 30px 30px 0px 30px;
+}
