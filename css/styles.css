@@ -1,17 +1,39 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 /* Universal Styles */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
 }
 
 /* Tag Styles */
 
+a {
+    text-decoration: none;
+    color: #d33a3a;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+a:hover {
+    border-bottom: 2px solid #cfcf20;
+    animation-name: link-hover;
+    animation-duration: 0.35s;
+    animation-fill-mode: forwards;
+}
+
 body {
-    background: center no-repeat url("../img/starry.gif") #0c045f, linear-gradient(transparent, #000);
-    background-size: contain;
+    background: linear-gradient(90deg, #0c045f, transparent, #0c045f) center top, url("../img/starry.gif") center top no-repeat;
+    background-size: 100%;
+    opacity: 0.9;
+    color: #d33a3a;
+    text-shadow: 0px 0px 5px #000;
 }
 
 header, footer {
@@ -19,8 +41,20 @@ header, footer {
     padding: 35px;
 }
 
+header {
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+footer {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 nav {
     text-align: center;
+    padding: 30px;
 }
 
 nav ul {
@@ -29,10 +63,42 @@ nav ul {
 
 nav ul li {
     display: inline;
+    margin: 15px;
 }
 
 /* ID Styles */
 #the-doge {
     height: 500px;
-    margin: 30px 30px 0px 30px;
+    width: 350px;
+    margin: 30px auto 0px auto;
+    border-radius: 20%;
+    box-shadow: 0 0 50px 50px #fff8 inset, 0 0 10px 10px #0008;
+    background: url("../img/dogenut.jpg") center center / cover no-repeat;
+}
+
+/* Transforms */
+
+@keyframes link-hover {
+    100% {
+        background-color: #0008;
+    }
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+    body {
+        background-size: 1000px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    #the-doge {
+        height: 400px;
+        width: 275px;
+    }
 }
