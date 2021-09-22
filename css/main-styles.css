@@ -7,7 +7,7 @@
 
 body {
     background: linear-gradient(90deg, #0c045f, transparent, #0c045f) center top, url("../img/starry.gif") center top no-repeat;
-    background-size: 100%;
+    background-size: 100% 100vh;
 }
 
 nav {
@@ -39,7 +39,7 @@ nav ul li {
 
 @media (max-width: 1000px) {
     body {
-        background-size: 1000px;
+        background-size: 100% 100vh;
     }
 
     nav ul li {
@@ -49,7 +49,7 @@ nav ul li {
 
 @media (max-width: 500px) {
     #the-doge {
-        height: 400px;
-        width: 275px;
+        height: 325px;
+        width: 200px;
     }
 }

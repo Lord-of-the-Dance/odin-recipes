@@ -10,6 +10,7 @@
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
+    line-height: 1.5em;
 }
 
 /* Tag Styles */
