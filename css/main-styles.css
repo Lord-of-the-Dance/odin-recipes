@@ -37,19 +37,30 @@ nav ul li {
 
 /* Media Queries */
 
-@media (max-width: 1000px) {
-    body {
-        background-size: 100% 100vh;
-    }
-
+@media (max-width: 768px) {
     nav ul li {
         display: block;
+        font-size: 1em;
+    }
+
+    body {
+        background-size: 100% 110vh;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     #the-doge {
         height: 325px;
         width: 200px;
+    }
+
+    body {
+        background-size: 100% 120vh;
+    }
+}
+
+@media (max-width: 355px) {
+    body {
+        background-size: 100% 160vh;
     }
 }
